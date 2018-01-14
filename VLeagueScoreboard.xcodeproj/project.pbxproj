@@ -15,6 +15,11 @@
 		CB971ADA1FFE68BB0024FDCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB971AD81FFE68BB0024FDCF /* LaunchScreen.storyboard */; };
 		CB971AE51FFE68BB0024FDCF /* VLeagueScoreboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB971AE41FFE68BB0024FDCF /* VLeagueScoreboardTests.swift */; };
 		CB971AF01FFE68BB0024FDCF /* VLeagueScoreboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB971AEF1FFE68BB0024FDCF /* VLeagueScoreboardUITests.swift */; };
+		CB971B001FFE8A9D0024FDCF /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB971AFF1FFE8A9D0024FDCF /* TabBarViewController.swift */; };
+		CBDDAEED200139A1007710C0 /* ViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDDAEEC200139A1007710C0 /* ViewControllerTableViewCell.swift */; };
+		CBDDAEEF2001441B007710C0 /* Tab1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDDAEEE2001441B007710C0 /* Tab1ViewController.swift */; };
+		CBDE3DD5200B942900E41EAE /* Tab2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDE3DD4200B942900E41EAE /* Tab2ViewController.swift */; };
+		CBDE3DD7200B94ED00E41EAE /* Tab2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDE3DD6200B94ED00E41EAE /* Tab2TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		CB971AEB1FFE68BB0024FDCF /* VLeagueScoreboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VLeagueScoreboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB971AEF1FFE68BB0024FDCF /* VLeagueScoreboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLeagueScoreboardUITests.swift; sourceTree = "<group>"; };
 		CB971AF11FFE68BB0024FDCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB971AFF1FFE8A9D0024FDCF /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarViewController.swift; path = ../TabBarViewController.swift; sourceTree = "<group>"; };
+		CBDDAEEC200139A1007710C0 /* ViewControllerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTableViewCell.swift; sourceTree = "<group>"; };
+		CBDDAEEE2001441B007710C0 /* Tab1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab1ViewController.swift; sourceTree = "<group>"; };
+		CBDE3DD4200B942900E41EAE /* Tab2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab2ViewController.swift; sourceTree = "<group>"; };
+		CBDE3DD6200B94ED00E41EAE /* Tab2TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab2TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +111,11 @@
 			children = (
 				CB971ACC1FFE68BB0024FDCF /* AppDelegate.swift */,
 				CB971ACE1FFE68BB0024FDCF /* ViewController.swift */,
+				CBDDAEEC200139A1007710C0 /* ViewControllerTableViewCell.swift */,
+				CB971AFF1FFE8A9D0024FDCF /* TabBarViewController.swift */,
+				CBDDAEEE2001441B007710C0 /* Tab1ViewController.swift */,
+				CBDE3DD4200B942900E41EAE /* Tab2ViewController.swift */,
+				CBDE3DD6200B94ED00E41EAE /* Tab2TableViewCell.swift */,
 				CB971AD01FFE68BB0024FDCF /* Main.storyboard */,
 				CB971AD61FFE68BB0024FDCF /* Assets.xcassets */,
 				CB971AD81FFE68BB0024FDCF /* LaunchScreen.storyboard */,
@@ -262,8 +277,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBDDAEEF2001441B007710C0 /* Tab1ViewController.swift in Sources */,
+				CB971B001FFE8A9D0024FDCF /* TabBarViewController.swift in Sources */,
 				CB971ACF1FFE68BB0024FDCF /* ViewController.swift in Sources */,
+				CBDE3DD5200B942900E41EAE /* Tab2ViewController.swift in Sources */,
+				CBDDAEED200139A1007710C0 /* ViewControllerTableViewCell.swift in Sources */,
 				CB971AD51FFE68BB0024FDCF /* VLeagueScoreboard.xcdatamodeld in Sources */,
+				CBDE3DD7200B94ED00E41EAE /* Tab2TableViewCell.swift in Sources */,
 				CB971ACD1FFE68BB0024FDCF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,6 +529,7 @@
 				CB971AF61FFE68BB0024FDCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB971AF71FFE68BB0024FDCF /* Build configuration list for PBXNativeTarget "VLeagueScoreboardTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +538,7 @@
 				CB971AF91FFE68BB0024FDCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB971AFA1FFE68BB0024FDCF /* Build configuration list for PBXNativeTarget "VLeagueScoreboardUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +547,7 @@
 				CB971AFC1FFE68BB0024FDCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
