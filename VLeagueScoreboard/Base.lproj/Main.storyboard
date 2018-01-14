@@ -195,7 +195,18 @@
                             <constraint firstItem="FGj-lg-Bjb" firstAttribute="top" secondItem="FcB-ky-VI5" secondAttribute="top" id="lhb-Dh-BQQ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="xpA-N8-Mlz"/>
+                    <navigationItem key="navigationItem" id="xpA-N8-Mlz">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="5ep-WF-Ge4">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WEN-Ya-DdE">
+                                <rect key="frame" x="233" y="7" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Year"/>
+                            </button>
+                            <connections>
+                                <segue destination="U4B-AA-oqJ" kind="presentation" id="DP5-2P-SwF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="FGj-lg-Bjb" id="4qs-U2-HOU"/>
                         <segue destination="q6C-tj-jYI" kind="show" identifier="showInfo" id="BT4-JE-W7b"/>
@@ -204,6 +215,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2w3-OK-9G2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="103.125" y="343.3098591549296"/>
+        </scene>
+        <!--Popup View Controller-->
+        <scene sceneID="a0c-q1-UHz">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="U4B-AA-oqJ" customClass="PopupViewController" customModule="VLeagueScoreboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Js-TR-qEY"/>
+                        <viewControllerLayoutGuide type="bottom" id="W9c-40-VZi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aGO-IL-7aS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sz6-OH-OGZ">
+                                <frame key="frameInset" minY="20" height="372"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.25486905809859156" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="U4B-AA-oqJ" id="bxS-wX-4V4"/>
+                                    <outlet property="delegate" destination="U4B-AA-oqJ" id="6ch-Ot-YfR"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aka-iZ-Jg4">
+                                <frame key="frameInset" minX="137" minY="86" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="tempButton:" destination="U4B-AA-oqJ" eventType="touchUpInside" id="BQ8-cx-dtY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="yearPicker" destination="sz6-OH-OGZ" id="KSZ-My-VdA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Qe-RK-FPx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="103" y="1136"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="VbE-89-5Ax">
