@@ -20,8 +20,6 @@
 		CBDDAEEF2001441B007710C0 /* Tab1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDDAEEE2001441B007710C0 /* Tab1ViewController.swift */; };
 		CBDE3DD5200B942900E41EAE /* Tab2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDE3DD4200B942900E41EAE /* Tab2ViewController.swift */; };
 		CBDE3DD7200B94ED00E41EAE /* Tab2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDE3DD6200B94ED00E41EAE /* Tab2TableViewCell.swift */; };
-		CBDE3DDD200BAF4100E41EAE /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDE3DDC200BAF4100E41EAE /* PopupViewController.swift */; };
-		CBDE3DDF200BBAAE00E41EAE /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDE3DDE200BBAAE00E41EAE /* test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +59,6 @@
 		CBDDAEEE2001441B007710C0 /* Tab1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab1ViewController.swift; sourceTree = "<group>"; };
 		CBDE3DD4200B942900E41EAE /* Tab2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab2ViewController.swift; sourceTree = "<group>"; };
 		CBDE3DD6200B94ED00E41EAE /* Tab2TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab2TableViewCell.swift; sourceTree = "<group>"; };
-		CBDE3DDC200BAF4100E41EAE /* PopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PopupViewController.swift; path = ../PopupViewController.swift; sourceTree = "<group>"; };
-		CBDE3DDE200BBAAE00E41EAE /* test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,8 +116,6 @@
 				CBDDAEEE2001441B007710C0 /* Tab1ViewController.swift */,
 				CBDE3DD4200B942900E41EAE /* Tab2ViewController.swift */,
 				CBDE3DD6200B94ED00E41EAE /* Tab2TableViewCell.swift */,
-				CBDE3DDC200BAF4100E41EAE /* PopupViewController.swift */,
-				CBDE3DDE200BBAAE00E41EAE /* test.swift */,
 				CB971AD01FFE68BB0024FDCF /* Main.storyboard */,
 				CB971AD61FFE68BB0024FDCF /* Assets.xcassets */,
 				CB971AD81FFE68BB0024FDCF /* LaunchScreen.storyboard */,
@@ -286,10 +280,8 @@
 				CBDDAEEF2001441B007710C0 /* Tab1ViewController.swift in Sources */,
 				CB971B001FFE8A9D0024FDCF /* TabBarViewController.swift in Sources */,
 				CB971ACF1FFE68BB0024FDCF /* ViewController.swift in Sources */,
-				CBDE3DDF200BBAAE00E41EAE /* test.swift in Sources */,
 				CBDE3DD5200B942900E41EAE /* Tab2ViewController.swift in Sources */,
 				CBDDAEED200139A1007710C0 /* ViewControllerTableViewCell.swift in Sources */,
-				CBDE3DDD200BAF4100E41EAE /* PopupViewController.swift in Sources */,
 				CB971AD51FFE68BB0024FDCF /* VLeagueScoreboard.xcdatamodeld in Sources */,
 				CBDE3DD7200B94ED00E41EAE /* Tab2TableViewCell.swift in Sources */,
 				CB971ACD1FFE68BB0024FDCF /* AppDelegate.swift in Sources */,
