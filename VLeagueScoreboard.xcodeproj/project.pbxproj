@@ -18,6 +18,7 @@
 		CB971B001FFE8A9D0024FDCF /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB971AFF1FFE8A9D0024FDCF /* TabBarViewController.swift */; };
 		CBDDAEED200139A1007710C0 /* ViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDDAEEC200139A1007710C0 /* ViewControllerTableViewCell.swift */; };
 		CBDDAEEF2001441B007710C0 /* Tab1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDDAEEE2001441B007710C0 /* Tab1ViewController.swift */; };
+		D21003D5200B574600292B8A /* DataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21003D4200B574600292B8A /* DataFetcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		CB971AFF1FFE8A9D0024FDCF /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarViewController.swift; path = ../TabBarViewController.swift; sourceTree = "<group>"; };
 		CBDDAEEC200139A1007710C0 /* ViewControllerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTableViewCell.swift; sourceTree = "<group>"; };
 		CBDDAEEE2001441B007710C0 /* Tab1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab1ViewController.swift; sourceTree = "<group>"; };
+		D21003D4200B574600292B8A /* DataFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataFetcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				CBDDAEEC200139A1007710C0 /* ViewControllerTableViewCell.swift */,
 				CB971AFF1FFE8A9D0024FDCF /* TabBarViewController.swift */,
 				CBDDAEEE2001441B007710C0 /* Tab1ViewController.swift */,
+				D21003D4200B574600292B8A /* DataFetcher.swift */,
 				CB971AD01FFE68BB0024FDCF /* Main.storyboard */,
 				CB971AD61FFE68BB0024FDCF /* Assets.xcassets */,
 				CB971AD81FFE68BB0024FDCF /* LaunchScreen.storyboard */,
@@ -272,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBDDAEEF2001441B007710C0 /* Tab1ViewController.swift in Sources */,
+				D21003D5200B574600292B8A /* DataFetcher.swift in Sources */,
 				CB971B001FFE8A9D0024FDCF /* TabBarViewController.swift in Sources */,
 				CB971ACF1FFE68BB0024FDCF /* ViewController.swift in Sources */,
 				CBDDAEED200139A1007710C0 /* ViewControllerTableViewCell.swift in Sources */,
