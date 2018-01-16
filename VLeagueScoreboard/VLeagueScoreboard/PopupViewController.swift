@@ -1,21 +1,18 @@
 //
-//  TabBarViewController.swift
+//  PopupViewController.swift
 //  VLeagueScoreboard
 //
-//  Created by Arofando, Hadi  on 1/4/18.
+//  Created by Arofando, Hadi  on 1/14/18.
 //  Copyright © 2018 VLA. All rights reserved.
 //
 
 import UIKit
 
-class TabBarViewController: UITabBarController {
+class PopupViewController: UIViewController {
 
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = ViewController.teamNameList[ViewController.rowSelect]
+
         // Do any additional setup after loading the view.
     }
 

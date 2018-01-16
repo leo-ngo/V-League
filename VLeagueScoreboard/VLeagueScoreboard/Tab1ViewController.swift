@@ -13,32 +13,37 @@ class Tab1ViewController: UIViewController {
     
     @IBOutlet weak var teamName: UILabel!
     @IBOutlet weak var logo: UIImageView!
-
+    @IBOutlet weak var segmenterChose: UISegmentedControl!
     
-    var myTeamName = String()
-    var myLogo = UIImage()
+    @IBOutlet weak var wins: UILabel!
+    @IBOutlet weak var losses: UILabel!
+    @IBOutlet weak var draws: UILabel!
+    @IBOutlet weak var matches: UILabel!
+    @IBOutlet weak var goals: UILabel!
+    @IBOutlet weak var rank: UILabel!
+    @IBOutlet weak var score: UILabel!
+    
+    
+
+    @IBOutlet weak var popupCons: NSLayoutConstraint!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        teamName.text = myTeamName
-        logo.image = myLogo
+        logo.image = ViewController.logoList[ViewController.rowSelect]
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func segmenter(_ sender: AnyObject) {
+        //segmenterChose.selectedSegmentIndex
     }
-    */
+    
 
+    
+    
 }

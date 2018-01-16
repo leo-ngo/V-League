@@ -18,6 +18,8 @@
 		CB971B001FFE8A9D0024FDCF /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB971AFF1FFE8A9D0024FDCF /* TabBarViewController.swift */; };
 		CBDDAEED200139A1007710C0 /* ViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDDAEEC200139A1007710C0 /* ViewControllerTableViewCell.swift */; };
 		CBDDAEEF2001441B007710C0 /* Tab1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDDAEEE2001441B007710C0 /* Tab1ViewController.swift */; };
+		CBDE3DD5200B942900E41EAE /* Tab2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDE3DD4200B942900E41EAE /* Tab2ViewController.swift */; };
+		CBDE3DD7200B94ED00E41EAE /* Tab2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDE3DD6200B94ED00E41EAE /* Tab2TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		CB971AFF1FFE8A9D0024FDCF /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarViewController.swift; path = ../TabBarViewController.swift; sourceTree = "<group>"; };
 		CBDDAEEC200139A1007710C0 /* ViewControllerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTableViewCell.swift; sourceTree = "<group>"; };
 		CBDDAEEE2001441B007710C0 /* Tab1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab1ViewController.swift; sourceTree = "<group>"; };
+		CBDE3DD4200B942900E41EAE /* Tab2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab2ViewController.swift; sourceTree = "<group>"; };
+		CBDE3DD6200B94ED00E41EAE /* Tab2TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab2TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,8 @@
 				CBDDAEEC200139A1007710C0 /* ViewControllerTableViewCell.swift */,
 				CB971AFF1FFE8A9D0024FDCF /* TabBarViewController.swift */,
 				CBDDAEEE2001441B007710C0 /* Tab1ViewController.swift */,
+				CBDE3DD4200B942900E41EAE /* Tab2ViewController.swift */,
+				CBDE3DD6200B94ED00E41EAE /* Tab2TableViewCell.swift */,
 				CB971AD01FFE68BB0024FDCF /* Main.storyboard */,
 				CB971AD61FFE68BB0024FDCF /* Assets.xcassets */,
 				CB971AD81FFE68BB0024FDCF /* LaunchScreen.storyboard */,
@@ -274,8 +280,10 @@
 				CBDDAEEF2001441B007710C0 /* Tab1ViewController.swift in Sources */,
 				CB971B001FFE8A9D0024FDCF /* TabBarViewController.swift in Sources */,
 				CB971ACF1FFE68BB0024FDCF /* ViewController.swift in Sources */,
+				CBDE3DD5200B942900E41EAE /* Tab2ViewController.swift in Sources */,
 				CBDDAEED200139A1007710C0 /* ViewControllerTableViewCell.swift in Sources */,
 				CB971AD51FFE68BB0024FDCF /* VLeagueScoreboard.xcdatamodeld in Sources */,
+				CBDE3DD7200B94ED00E41EAE /* Tab2TableViewCell.swift in Sources */,
 				CB971ACD1FFE68BB0024FDCF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
