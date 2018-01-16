@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C0B5D7F200E9A1B00196F1A /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0B5D7E200E9A1A00196F1A /* Player.swift */; };
+		6C0B5D81200E9A5500196F1A /* PlayerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0B5D80200E9A5500196F1A /* PlayerList.swift */; };
 		CB24280D200E363B001CE7A7 /* TeamData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB24280C200E363B001CE7A7 /* TeamData.swift */; };
 		CB24280F200E6BCD001CE7A7 /* DataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB24280E200E6BCD001CE7A7 /* DataFetcher.swift */; };
 		CB242811200E6BFE001CE7A7 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB242810200E6BFE001CE7A7 /* Team.swift */; };
@@ -44,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6C0B5D7E200E9A1A00196F1A /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		6C0B5D80200E9A5500196F1A /* PlayerList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerList.swift; sourceTree = "<group>"; };
 		CB24280C200E363B001CE7A7 /* TeamData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamData.swift; sourceTree = "<group>"; };
 		CB24280E200E6BCD001CE7A7 /* DataFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataFetcher.swift; sourceTree = "<group>"; };
 		CB242810200E6BFE001CE7A7 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
@@ -117,6 +121,8 @@
 		CB971ACB1FFE68BB0024FDCF /* VLeagueScoreboard */ = {
 			isa = PBXGroup;
 			children = (
+				6C0B5D80200E9A5500196F1A /* PlayerList.swift */,
+				6C0B5D7E200E9A1A00196F1A /* Player.swift */,
 				CB971ACC1FFE68BB0024FDCF /* AppDelegate.swift */,
 				CB971ACE1FFE68BB0024FDCF /* ViewController.swift */,
 				CB24280E200E6BCD001CE7A7 /* DataFetcher.swift */,
@@ -294,8 +300,10 @@
 				CB971ACF1FFE68BB0024FDCF /* ViewController.swift in Sources */,
 				CB242815200E9887001CE7A7 /* DataStorage.swift in Sources */,
 				CBDE3DD5200B942900E41EAE /* Tab2ViewController.swift in Sources */,
+				6C0B5D7F200E9A1B00196F1A /* Player.swift in Sources */,
 				CB24280D200E363B001CE7A7 /* TeamData.swift in Sources */,
 				CB24280F200E6BCD001CE7A7 /* DataFetcher.swift in Sources */,
+				6C0B5D81200E9A5500196F1A /* PlayerList.swift in Sources */,
 				CBDDAEED200139A1007710C0 /* ViewControllerTableViewCell.swift in Sources */,
 				CB971AD51FFE68BB0024FDCF /* VLeagueScoreboard.xcdatamodeld in Sources */,
 				CB242811200E6BFE001CE7A7 /* Team.swift in Sources */,
