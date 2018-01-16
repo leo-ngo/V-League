@@ -199,6 +199,7 @@
                         <outlet property="Label_1" destination="EQn-r2-pbR" id="rCy-lG-hS5"/>
                         <outlet property="draws" destination="Udh-47-smr" id="Zvd-nX-I9v"/>
                         <outlet property="goals" destination="qJl-tV-Tmt" id="VFP-X8-3KY"/>
+                        <outlet property="label_1" destination="EQn-r2-pbR" id="ZMG-ev-5uv"/>
                         <outlet property="label_2" destination="j2x-2T-6zv" id="56Z-6j-7sf"/>
                         <outlet property="label_3" destination="tod-bN-61U" id="L73-4v-1JN"/>
                         <outlet property="label_4" destination="85c-Gq-e9m" id="mpR-9R-KFk"/>
@@ -209,6 +210,11 @@
                         <outlet property="rank" destination="XPB-Z6-OIg" id="2cs-md-3Yo"/>
                         <outlet property="score" destination="0hi-D6-3Kv" id="igO-cM-5Uc"/>
                         <outlet property="segmenterChose" destination="8yK-td-yWy" id="S4j-2b-BzF"/>
+                        <outlet property="value_1" destination="qqP-kq-JKZ" id="93G-aw-alM"/>
+                        <outlet property="value_2" destination="5cS-aL-EUU" id="hfO-iO-Bii"/>
+                        <outlet property="value_3" destination="Udh-47-smr" id="CfD-cn-Kw9"/>
+                        <outlet property="value_4" destination="CdH-03-lDm" id="8gR-hp-2fm"/>
+                        <outlet property="value_5" destination="qJl-tV-Tmt" id="0xl-xc-xuW"/>
                         <outlet property="wins" destination="qqP-kq-JKZ" id="rNe-HV-KrD"/>
                     </connections>
                 </viewController>

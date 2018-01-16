@@ -15,7 +15,7 @@ class TabBarViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = ViewController.teamNameList[ViewController.rowSelect]
+        
         
         // Do any additional setup after loading the view.
     }

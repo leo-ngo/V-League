@@ -10,6 +10,7 @@
 		CB24280D200E363B001CE7A7 /* TeamData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB24280C200E363B001CE7A7 /* TeamData.swift */; };
 		CB24280F200E6BCD001CE7A7 /* DataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB24280E200E6BCD001CE7A7 /* DataFetcher.swift */; };
 		CB242811200E6BFE001CE7A7 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB242810200E6BFE001CE7A7 /* Team.swift */; };
+		CB242815200E9887001CE7A7 /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB242814200E9887001CE7A7 /* DataStorage.swift */; };
 		CB971ACD1FFE68BB0024FDCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB971ACC1FFE68BB0024FDCF /* AppDelegate.swift */; };
 		CB971ACF1FFE68BB0024FDCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB971ACE1FFE68BB0024FDCF /* ViewController.swift */; };
 		CB971AD21FFE68BB0024FDCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB971AD01FFE68BB0024FDCF /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		CB24280C200E363B001CE7A7 /* TeamData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamData.swift; sourceTree = "<group>"; };
 		CB24280E200E6BCD001CE7A7 /* DataFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataFetcher.swift; sourceTree = "<group>"; };
 		CB242810200E6BFE001CE7A7 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		CB242814200E9887001CE7A7 /* DataStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
 		CB971AC91FFE68BB0024FDCF /* VLeagueScoreboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VLeagueScoreboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB971ACC1FFE68BB0024FDCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB971ACE1FFE68BB0024FDCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				CBDDAEEC200139A1007710C0 /* ViewControllerTableViewCell.swift */,
 				CB971AFF1FFE8A9D0024FDCF /* TabBarViewController.swift */,
 				CBDDAEEE2001441B007710C0 /* Tab1ViewController.swift */,
+				CB242814200E9887001CE7A7 /* DataStorage.swift */,
 				CBDE3DD4200B942900E41EAE /* Tab2ViewController.swift */,
 				CBDE3DD6200B94ED00E41EAE /* Tab2TableViewCell.swift */,
 				CB24280C200E363B001CE7A7 /* TeamData.swift */,
@@ -289,6 +292,7 @@
 				CBDDAEEF2001441B007710C0 /* Tab1ViewController.swift in Sources */,
 				CB971B001FFE8A9D0024FDCF /* TabBarViewController.swift in Sources */,
 				CB971ACF1FFE68BB0024FDCF /* ViewController.swift in Sources */,
+				CB242815200E9887001CE7A7 /* DataStorage.swift in Sources */,
 				CBDE3DD5200B942900E41EAE /* Tab2ViewController.swift in Sources */,
 				CB24280D200E363B001CE7A7 /* TeamData.swift in Sources */,
 				CB24280F200E6BCD001CE7A7 /* DataFetcher.swift in Sources */,

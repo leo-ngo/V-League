@@ -31,10 +31,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     //yearButton.setTitle("2018", forState: UIControlState.Normal)
     
     
-    static let teamNameList = ["Grim Dawn", "Terraria", "Necrodancer", "Don't Starve"]
-    static let logoList: [UIImage] = [#imageLiteral(resourceName: "GD"),#imageLiteral(resourceName: "terraria"),#imageLiteral(resourceName: "necrodancer"),#imageLiteral(resourceName: "don't_starve")]
+    //static let teamNameList = ["Grim Dawn", "Terraria", "Necrodancer", "Don't Starve"]
+    //static let logoList: [UIImage] = [#imageLiteral(resourceName: "GD"),#imageLiteral(resourceName: "terraria"),#imageLiteral(resourceName: "necrodancer"),#imageLiteral(resourceName: "don't_starve")]
+    
     static var rowSelect = 0
-    let year = [2014, 2015, 2016, 2017, 2018]
+    let year = [2017, 2016, 2015, 2014]
     
     var teamList = VleagueParser(year: 2017).getTeamList()
     
@@ -60,17 +61,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return(cell)
     }
     
-    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let infoView = segue.destination.tabBarController?.viewControllers?[0] as! Tab1ViewController
-        infoView.myTeamName = teamNameList[(tableView.indexPathsForSelectedRows?[0].row)!]
-        infoView.myLogo = logoList[(tableView.indexPathsForSelectedRows?[0].row)!]
+   // override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-    }*/
+        //let barViewControllers = segue.destination as! UITabBarController
+        //let nav = barViewControllers.viewControllers![0] as! UINavigationController
+        //let destinationViewController = nav.viewControllers[0] as! Tab1ViewController
+        //destinationViewController.rowIndex = (tableView.indexPathsForSelectedRows?[0].row)!
+        
+        
+    //}
+    
     
     //Segue to Detailed Info
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         ViewController.rowSelect = (tableView.indexPathsForSelectedRows?[0].row)!
+        //rowIndex.index = (tableView.indexPathsForSelectedRows?[0].row)!
         performSegue(withIdentifier: "showInfo", sender: self)
     }
     
@@ -140,6 +146,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.navigationItem.title = "Rankings"
         self.navigationItem.rightBarButtonItem?.title = "2017"
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
+        
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

@@ -8,17 +8,23 @@
 
 import UIKit
 
+//struct rowIndex {
+    //static var index: Int = 0
+//}
+
 class Tab1ViewController: UIViewController {
 
     
-    @IBOutlet weak var teamName: UILabel!
+    //@IBOutlet weak var teamName: UILabel!
     @IBOutlet weak var logo: UIImageView!
     @IBOutlet weak var segmenterChose: UISegmentedControl!
-    @IBOutlet weak var wins: UILabel!
-    @IBOutlet weak var losses: UILabel!
-    @IBOutlet weak var draws: UILabel!
-    @IBOutlet weak var matches: UILabel!
-    @IBOutlet weak var goals: UILabel!
+    
+    @IBOutlet weak var value_1: UILabel!
+    @IBOutlet weak var value_2: UILabel!
+    @IBOutlet weak var value_3: UILabel!
+    @IBOutlet weak var value_4: UILabel!
+    @IBOutlet weak var value_5: UILabel!
+    
     @IBOutlet weak var rank: UILabel!
     @IBOutlet weak var score: UILabel!
     
@@ -31,14 +37,20 @@ class Tab1ViewController: UIViewController {
     
     
     
-    @IBOutlet weak var popupCons: NSLayoutConstraint!
+    var teamList = VleagueParser(year: 2017).getTeamList()
+    //@IBOutlet weak var popupCons: NSLayoutConstraint!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        logo.image = ViewController.logoList[ViewController.rowSelect]
-        wins.text = String(69)
-        losses.text = String(420)
+        //logo.image = ViewController.logoList[ViewController.rowSelect]
+        
+        value_1.text = String(teamList[ViewController.rowSelect].wins)
+        value_2.text = String(teamList[ViewController.rowSelect].losses)
+        value_3.text = String(teamList[ViewController.rowSelect].draws)
+        value_4.text = String(teamList[ViewController.rowSelect].matches)
+        value_5.text = String(teamList[ViewController.rowSelect].goalsFor + teamList[ViewController.rowSelect].goalsForAway)
+        
         
         label_1.text = "Wins"
         label_2.text = "Losses"
@@ -55,20 +67,13 @@ class Tab1ViewController: UIViewController {
     
 
     @IBAction func segmenter(_ sender: AnyObject) {
-        if segmenterChose.selectedSegmentIndex == 1 {
-            
-            wins.text = String(5)
-            losses.text = String(96)
-            
-            label_1.text = "Do"
-            label_2.text = "you"
-            label_3.text = "know"
-            label_4.text = "da"
-            label_5.text = "wei?"
-        }
         if segmenterChose.selectedSegmentIndex == 0 {
-            wins.text = String(55)
-            losses.text = String(0455)
+            
+            value_1.text = String(teamList[ViewController.rowSelect].wins)
+            value_2.text = String(teamList[ViewController.rowSelect].losses)
+            value_3.text = String(teamList[ViewController.rowSelect].draws)
+            value_4.text = String(teamList[ViewController.rowSelect].matches)
+            value_5.text = String(teamList[ViewController.rowSelect].goalsFor + teamList[ViewController.rowSelect].goalsForAway)
             
             label_1.text = "Wins"
             label_2.text = "Losses"
@@ -76,7 +81,22 @@ class Tab1ViewController: UIViewController {
             label_4.text = "Matches"
             label_5.text = "Goals"
         }
-    }
+
+        if segmenterChose.selectedSegmentIndex == 1 {
+            
+            value_1.text = String(teamList[ViewController.rowSelect].goalsFor)
+            value_2.text = String(teamList[ViewController.rowSelect].goalsForAway)
+            value_3.text = String(teamList[ViewController.rowSelect].goalsAgainst)
+            value_4.text = String(teamList[ViewController.rowSelect].goalDifference)
+            value_5.text = String(teamList[ViewController.rowSelect].yellowCards)
+            
+            label_1.text = "Do"
+            label_2.text = "you"
+            label_3.text = "know"
+            label_4.text = "da"
+            label_5.text = "wei?"
+        }
+            }
     
 
     
