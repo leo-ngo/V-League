@@ -10,36 +10,40 @@ import Foundation
 import WebKit
 
 class VleagueParser {
-    var year: Int = 0
-    var round: Int = 0
-    
-    func praser(){
-        var url: String = "http://www.vnleague.com/vdqg-vleague/ket-qua/" + String(year) + "-" + String(round) + "-Ket-qua-thong-ke-giai-vdqg-vleague-Toyota.html"
-        let TEAM_NAME_REGEX: String = "title=\"Xem đội bóng\"><b>(.{0,30})<//b><"
+    var year: Int
+    var url: String
+    // TODO: limit year range
+
+    let TEAM_NAME_REGEX: String = "(\\d+)</td>.{0,200}<b>(.{0,50})</b></a><.{0,50}><b>(\\d+).{0,50}>(\\d+)<.{0,50}>(\\d+)<.{0,50}>(\\d+)<.{0,50}>(\\d+)<.{0,50}>(\\d+)<.{0,50}>(\\d+)<.{0,50}>(-*\\d+)<.{0,50}>(\\d+)<.{0,50}>(\\d+)<.{0,50}>(\\d+)<"
+    init(year: Int) {
+        self.year = year
+        url = "http://www.vnleague.com/vdqg-vleague/bang-xep-hang/" + String(year) + "-0-Bang-xep-hang-vdqg-vleague-Toyota.html"
+    }
+    func getTeamByRank(rank: Int) -> Team {
+        var team = Team()
+        var properties = [String]()
         if let url = URL(string: url) {
             do {
                 let regex = try NSRegularExpression(pattern: TEAM_NAME_REGEX)
                 let contents = try String(contentsOf: url)
                 let results = regex.matches(in: contents, range: NSRange(location: 0, length: contents.characters.count))
-                let third = results[0].rangeAt(3)
-                print(results)
-            } catch {
-                // contents could not be loaded
-            }
-        } else {
-            // the URL was bad!
-        }
-    }
-    func capturedGroups(withRegex pattern: String) -> [String] {
-        var results = [String]()
-        var aaa: String = "http://www.vnleague.com/vdqg-vleague/ket-qua/" + String(year) + "-" + String(round) + "-Ket-qua-thong-ke-giai-vdqg-vleague-Toyota.html"
-        
-        var regex: NSRegularExpression
-        var contents: String = ""
-        let TEAM_NAME_REGEX: String = "title=\"Xem đội bóng\"><b>(.{0,30})<//b><"
-        if let url = URL(string: aaa) {
-            do {
-                contents = try String(contentsOf: url)
+                for i in 1...13 {
+                    let property = results[rank - 1].rangeAt(i)
+                    properties.append(contents.substring(with: contents.index(contents.startIndex, offsetBy: property.location)..<contents.index(contents.startIndex, offsetBy: property.location + property.length)))
+                }
+                team.rank = Int(properties[0]) ?? 0
+                team.name = properties[1]
+                team.matches = Int(properties[2]) ?? 0
+                team.wins = Int(properties[3]) ?? 0
+                team.draws = Int(properties[4]) ?? 0
+                team.losses = Int(properties[5]) ?? 0
+                team.goalsFor = Int(properties[6]) ?? 0
+                team.goalsForAway = Int(properties[7]) ?? 0
+                team.goalsAgainst = Int(properties[8]) ?? 0
+                team.goalDifference = Int(properties[9]) ?? 0
+                team.yellowCards = Int(properties[10]) ?? 0
+                team.redCards = Int(properties[11]) ?? 0
+                team.points = Int(properties[12]) ?? 0
                 
             } catch {
                 // contents could not be loaded
@@ -47,25 +51,15 @@ class VleagueParser {
         } else {
             // the URL was bad!
         }
-        do {
-            regex = try NSRegularExpression(pattern: TEAM_NAME_REGEX, options: [])
-        } catch {
-            return results
-        }
-        
-        let matches = regex.matches(in: contents, options: [], range: NSRange(location:0, length: contents.characters.count))
-        
-        guard let match = matches.first else { return results }
-        
-        let lastRangeIndex = match.numberOfRanges - 1
-        guard lastRangeIndex >= 1 else { return results }
-        
-        for i in 1...lastRangeIndex {
-            let capturedGroupIndex = match.rangeAt(i)
-            let matchedString = (contents as NSString).substring(with: capturedGroupIndex)
-            results.append(matchedString)
-        }
-        
-        return results
+        return team
     }
+    
+    func getTeamList() -> [Team] {
+        var teamList = [Team]()
+        for i in 1...14 {
+            teamList.append(getTeamByRank(rank: i))
+        }
+        return teamList
+    }
+    
 }
