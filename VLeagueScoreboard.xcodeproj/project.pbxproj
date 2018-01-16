@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB24280D200E363B001CE7A7 /* TeamData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB24280C200E363B001CE7A7 /* TeamData.swift */; };
+		CB24280F200E6BCD001CE7A7 /* DataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB24280E200E6BCD001CE7A7 /* DataFetcher.swift */; };
+		CB242811200E6BFE001CE7A7 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB242810200E6BFE001CE7A7 /* Team.swift */; };
+		CB971ACD1FFE68BB0024FDCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB971ACC1FFE68BB0024FDCF /* AppDelegate.swift */; };
+		CB971ACF1FFE68BB0024FDCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB971ACE1FFE68BB0024FDCF /* ViewController.swift */; };
+		CB971AD21FFE68BB0024FDCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB971AD01FFE68BB0024FDCF /* Main.storyboard */; };
+		CB971AD51FFE68BB0024FDCF /* VLeagueScoreboard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB971AD31FFE68BB0024FDCF /* VLeagueScoreboard.xcdatamodeld */; };
+		CB971AD71FFE68BB0024FDCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB971AD61FFE68BB0024FDCF /* Assets.xcassets */; };
+		CB971ADA1FFE68BB0024FDCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB971AD81FFE68BB0024FDCF /* LaunchScreen.storyboard */; };
+		CB971AE51FFE68BB0024FDCF /* VLeagueScoreboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB971AE41FFE68BB0024FDCF /* VLeagueScoreboardTests.swift */; };
+		CB971AF01FFE68BB0024FDCF /* VLeagueScoreboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB971AEF1FFE68BB0024FDCF /* VLeagueScoreboardUITests.swift */; };
+		CB971B001FFE8A9D0024FDCF /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB971AFF1FFE8A9D0024FDCF /* TabBarViewController.swift */; };
+		CBDDAEED200139A1007710C0 /* ViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDDAEEC200139A1007710C0 /* ViewControllerTableViewCell.swift */; };
+		CBDDAEEF2001441B007710C0 /* Tab1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDDAEEE2001441B007710C0 /* Tab1ViewController.swift */; };
+		CBDE3DD5200B942900E41EAE /* Tab2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDE3DD4200B942900E41EAE /* Tab2ViewController.swift */; };
+		CBDE3DD7200B94ED00E41EAE /* Tab2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDE3DD6200B94ED00E41EAE /* Tab2TableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB971AE11FFE68BB0024FDCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB971AC11FFE68BB0024FDCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB971AC81FFE68BB0024FDCF;
+			remoteInfo = VLeagueScoreboard;
+		};
+		CB971AEC1FFE68BB0024FDCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB971AC11FFE68BB0024FDCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB971AC81FFE68BB0024FDCF;
+			remoteInfo = VLeagueScoreboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CB24280C200E363B001CE7A7 /* TeamData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamData.swift; sourceTree = "<group>"; };
+		CB24280E200E6BCD001CE7A7 /* DataFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataFetcher.swift; sourceTree = "<group>"; };
+		CB242810200E6BFE001CE7A7 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		CB971AC91FFE68BB0024FDCF /* VLeagueScoreboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VLeagueScoreboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB971ACC1FFE68BB0024FDCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB971ACE1FFE68BB0024FDCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CB971AD11FFE68BB0024FDCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB971AD41FFE68BB0024FDCF /* VLeagueScoreboard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VLeagueScoreboard.xcdatamodel; sourceTree = "<group>"; };
+		CB971AD61FFE68BB0024FDCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB971AD91FFE68BB0024FDCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB971ADB1FFE68BB0024FDCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB971AE01FFE68BB0024FDCF /* VLeagueScoreboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VLeagueScoreboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB971AE41FFE68BB0024FDCF /* VLeagueScoreboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLeagueScoreboardTests.swift; sourceTree = "<group>"; };
+		CB971AE61FFE68BB0024FDCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB971AEB1FFE68BB0024FDCF /* VLeagueScoreboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VLeagueScoreboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB971AEF1FFE68BB0024FDCF /* VLeagueScoreboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLeagueScoreboardUITests.swift; sourceTree = "<group>"; };
+		CB971AF11FFE68BB0024FDCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB971AFF1FFE8A9D0024FDCF /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarViewController.swift; path = ../TabBarViewController.swift; sourceTree = "<group>"; };
+		CBDDAEEC200139A1007710C0 /* ViewControllerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTableViewCell.swift; sourceTree = "<group>"; };
+		CBDDAEEE2001441B007710C0 /* Tab1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab1ViewController.swift; sourceTree = "<group>"; };
+		CBDE3DD4200B942900E41EAE /* Tab2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab2ViewController.swift; sourceTree = "<group>"; };
+		CBDE3DD6200B94ED00E41EAE /* Tab2TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab2TableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB971AC61FFE68BB0024FDCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB971ADD1FFE68BB0024FDCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB971AE81FFE68BB0024FDCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB971AC01FFE68BB0024FDCF = {
+			isa = PBXGroup;
+			children = (
+				CB971ACB1FFE68BB0024FDCF /* VLeagueScoreboard */,
+				CB971AE31FFE68BB0024FDCF /* VLeagueScoreboardTests */,
+				CB971AEE1FFE68BB0024FDCF /* VLeagueScoreboardUITests */,
+				CB971ACA1FFE68BB0024FDCF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB971ACA1FFE68BB0024FDCF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB971AC91FFE68BB0024FDCF /* VLeagueScoreboard.app */,
+				CB971AE01FFE68BB0024FDCF /* VLeagueScoreboardTests.xctest */,
+				CB971AEB1FFE68BB0024FDCF /* VLeagueScoreboardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB971ACB1FFE68BB0024FDCF /* VLeagueScoreboard */ = {
+			isa = PBXGroup;
+			children = (
+				CB971ACC1FFE68BB0024FDCF /* AppDelegate.swift */,
+				CB971ACE1FFE68BB0024FDCF /* ViewController.swift */,
+				CB24280E200E6BCD001CE7A7 /* DataFetcher.swift */,
+				CB242810200E6BFE001CE7A7 /* Team.swift */,
+				CBDDAEEC200139A1007710C0 /* ViewControllerTableViewCell.swift */,
+				CB971AFF1FFE8A9D0024FDCF /* TabBarViewController.swift */,
+				CBDDAEEE2001441B007710C0 /* Tab1ViewController.swift */,
+				CBDE3DD4200B942900E41EAE /* Tab2ViewController.swift */,
+				CBDE3DD6200B94ED00E41EAE /* Tab2TableViewCell.swift */,
+				CB24280C200E363B001CE7A7 /* TeamData.swift */,
+				CB971AD01FFE68BB0024FDCF /* Main.storyboard */,
+				CB971AD61FFE68BB0024FDCF /* Assets.xcassets */,
+				CB971AD81FFE68BB0024FDCF /* LaunchScreen.storyboard */,
+				CB971ADB1FFE68BB0024FDCF /* Info.plist */,
+				CB971AD31FFE68BB0024FDCF /* VLeagueScoreboard.xcdatamodeld */,
+			);
+			path = VLeagueScoreboard;
+			sourceTree = "<group>";
+		};
+		CB971AE31FFE68BB0024FDCF /* VLeagueScoreboardTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB971AE41FFE68BB0024FDCF /* VLeagueScoreboardTests.swift */,
+				CB971AE61FFE68BB0024FDCF /* Info.plist */,
+			);
+			path = VLeagueScoreboardTests;
+			sourceTree = "<group>";
+		};
+		CB971AEE1FFE68BB0024FDCF /* VLeagueScoreboardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CB971AEF1FFE68BB0024FDCF /* VLeagueScoreboardUITests.swift */,
+				CB971AF11FFE68BB0024FDCF /* Info.plist */,
+			);
+			path = VLeagueScoreboardUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB971AC81FFE68BB0024FDCF /* VLeagueScoreboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB971AF41FFE68BB0024FDCF /* Build configuration list for PBXNativeTarget "VLeagueScoreboard" */;
+			buildPhases = (
+				CB971AC51FFE68BB0024FDCF /* Sources */,
+				CB971AC61FFE68BB0024FDCF /* Frameworks */,
+				CB971AC71FFE68BB0024FDCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VLeagueScoreboard;
+			productName = VLeagueScoreboard;
+			productReference = CB971AC91FFE68BB0024FDCF /* VLeagueScoreboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB971ADF1FFE68BB0024FDCF /* VLeagueScoreboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB971AF71FFE68BB0024FDCF /* Build configuration list for PBXNativeTarget "VLeagueScoreboardTests" */;
+			buildPhases = (
+				CB971ADC1FFE68BB0024FDCF /* Sources */,
+				CB971ADD1FFE68BB0024FDCF /* Frameworks */,
+				CB971ADE1FFE68BB0024FDCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB971AE21FFE68BB0024FDCF /* PBXTargetDependency */,
+			);
+			name = VLeagueScoreboardTests;
+			productName = VLeagueScoreboardTests;
+			productReference = CB971AE01FFE68BB0024FDCF /* VLeagueScoreboardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CB971AEA1FFE68BB0024FDCF /* VLeagueScoreboardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB971AFA1FFE68BB0024FDCF /* Build configuration list for PBXNativeTarget "VLeagueScoreboardUITests" */;
+			buildPhases = (
+				CB971AE71FFE68BB0024FDCF /* Sources */,
+				CB971AE81FFE68BB0024FDCF /* Frameworks */,
+				CB971AE91FFE68BB0024FDCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB971AED1FFE68BB0024FDCF /* PBXTargetDependency */,
+			);
+			name = VLeagueScoreboardUITests;
+			productName = VLeagueScoreboardUITests;
+			productReference = CB971AEB1FFE68BB0024FDCF /* VLeagueScoreboardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB971AC11FFE68BB0024FDCF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = VLA;
+				TargetAttributes = {
+					CB971AC81FFE68BB0024FDCF = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					CB971ADF1FFE68BB0024FDCF = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CB971AC81FFE68BB0024FDCF;
+					};
+					CB971AEA1FFE68BB0024FDCF = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CB971AC81FFE68BB0024FDCF;
+					};
+				};
+			};
+			buildConfigurationList = CB971AC41FFE68BB0024FDCF /* Build configuration list for PBXProject "VLeagueScoreboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB971AC01FFE68BB0024FDCF;
+			productRefGroup = CB971ACA1FFE68BB0024FDCF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB971AC81FFE68BB0024FDCF /* VLeagueScoreboard */,
+				CB971ADF1FFE68BB0024FDCF /* VLeagueScoreboardTests */,
+				CB971AEA1FFE68BB0024FDCF /* VLeagueScoreboardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB971AC71FFE68BB0024FDCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB971ADA1FFE68BB0024FDCF /* LaunchScreen.storyboard in Resources */,
+				CB971AD71FFE68BB0024FDCF /* Assets.xcassets in Resources */,
+				CB971AD21FFE68BB0024FDCF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB971ADE1FFE68BB0024FDCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB971AE91FFE68BB0024FDCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB971AC51FFE68BB0024FDCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBDDAEEF2001441B007710C0 /* Tab1ViewController.swift in Sources */,
+				CB971B001FFE8A9D0024FDCF /* TabBarViewController.swift in Sources */,
+				CB971ACF1FFE68BB0024FDCF /* ViewController.swift in Sources */,
+				CBDE3DD5200B942900E41EAE /* Tab2ViewController.swift in Sources */,
+				CB24280D200E363B001CE7A7 /* TeamData.swift in Sources */,
+				CB24280F200E6BCD001CE7A7 /* DataFetcher.swift in Sources */,
+				CBDDAEED200139A1007710C0 /* ViewControllerTableViewCell.swift in Sources */,
+				CB971AD51FFE68BB0024FDCF /* VLeagueScoreboard.xcdatamodeld in Sources */,
+				CB242811200E6BFE001CE7A7 /* Team.swift in Sources */,
+				CBDE3DD7200B94ED00E41EAE /* Tab2TableViewCell.swift in Sources */,
+				CB971ACD1FFE68BB0024FDCF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB971ADC1FFE68BB0024FDCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB971AE51FFE68BB0024FDCF /* VLeagueScoreboardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB971AE71FFE68BB0024FDCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB971AF01FFE68BB0024FDCF /* VLeagueScoreboardUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB971AE21FFE68BB0024FDCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB971AC81FFE68BB0024FDCF /* VLeagueScoreboard */;
+			targetProxy = CB971AE11FFE68BB0024FDCF /* PBXContainerItemProxy */;
+		};
+		CB971AED1FFE68BB0024FDCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB971AC81FFE68BB0024FDCF /* VLeagueScoreboard */;
+			targetProxy = CB971AEC1FFE68BB0024FDCF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB971AD01FFE68BB0024FDCF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB971AD11FFE68BB0024FDCF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CB971AD81FFE68BB0024FDCF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB971AD91FFE68BB0024FDCF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB971AF21FFE68BB0024FDCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB971AF31FFE68BB0024FDCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB971AF51FFE68BB0024FDCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VLeagueScoreboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RMIT.VLeagueScoreboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CB971AF61FFE68BB0024FDCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VLeagueScoreboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RMIT.VLeagueScoreboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CB971AF81FFE68BB0024FDCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VLeagueScoreboardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RMIT.VLeagueScoreboardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VLeagueScoreboard.app/VLeagueScoreboard";
+			};
+			name = Debug;
+		};
+		CB971AF91FFE68BB0024FDCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VLeagueScoreboardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RMIT.VLeagueScoreboardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VLeagueScoreboard.app/VLeagueScoreboard";
+			};
+			name = Release;
+		};
+		CB971AFB1FFE68BB0024FDCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = VLeagueScoreboardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RMIT.VLeagueScoreboardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = VLeagueScoreboard;
+			};
+			name = Debug;
+		};
+		CB971AFC1FFE68BB0024FDCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = VLeagueScoreboardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RMIT.VLeagueScoreboardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = VLeagueScoreboard;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB971AC41FFE68BB0024FDCF /* Build configuration list for PBXProject "VLeagueScoreboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB971AF21FFE68BB0024FDCF /* Debug */,
+				CB971AF31FFE68BB0024FDCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB971AF41FFE68BB0024FDCF /* Build configuration list for PBXNativeTarget "VLeagueScoreboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB971AF51FFE68BB0024FDCF /* Debug */,
+				CB971AF61FFE68BB0024FDCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB971AF71FFE68BB0024FDCF /* Build configuration list for PBXNativeTarget "VLeagueScoreboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB971AF81FFE68BB0024FDCF /* Debug */,
+				CB971AF91FFE68BB0024FDCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB971AFA1FFE68BB0024FDCF /* Build configuration list for PBXNativeTarget "VLeagueScoreboardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB971AFB1FFE68BB0024FDCF /* Debug */,
+				CB971AFC1FFE68BB0024FDCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CB971AD31FFE68BB0024FDCF /* VLeagueScoreboard.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CB971AD41FFE68BB0024FDCF /* VLeagueScoreboard.xcdatamodel */,
+			);
+			currentVersion = CB971AD41FFE68BB0024FDCF /* VLeagueScoreboard.xcdatamodel */;
+			path = VLeagueScoreboard.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CB971AC11FFE68BB0024FDCF /* Project object */;
+}
