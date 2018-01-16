@@ -17,6 +17,18 @@ class VleagueParser {
         self.year = year
         url = "http://www.vnleague.com/vdqg-vleague/bang-xep-hang/" + String(year) + "-0-Bang-xep-hang-vdqg-vleague-Toyota.html"
     }
+    
+    func getTeamCount() -> Int {
+        if let url = URL(string: url) {
+            do {
+                let regex = try NSRegularExpression(pattern: TEAM_NAME_REGEX)
+                let contents = try String(contentsOf: url)
+                let results = regex.matches(in: contents, range: NSRange(location: 0, length: contents.characters.count))
+                return results.count
+            } catch {}
+        }
+        return 0
+    }
     func getTeamByRank(rank: Int) -> Team {
         var team = Team()
         var properties = [String]()
@@ -54,7 +66,7 @@ class VleagueParser {
     
     func getTeamList() -> [Team] {
         var teamList = [Team]()
-        for i in 1...14 {
+        for i in 1...getTeamCount() {
             teamList.append(getTeamByRank(rank: i))
         }
         return teamList

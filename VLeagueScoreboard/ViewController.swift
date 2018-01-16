@@ -26,7 +26,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     //@IBOutlet weak var yearButton: UIBarButtonItem!
     
-    
+
     
     //yearButton.setTitle("2018", forState: UIControlState.Normal)
     
@@ -34,8 +34,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     static let teamNameList = ["Grim Dawn", "Terraria", "Necrodancer", "Don't Starve"]
     static let logoList: [UIImage] = [#imageLiteral(resourceName: "GD"),#imageLiteral(resourceName: "terraria"),#imageLiteral(resourceName: "necrodancer"),#imageLiteral(resourceName: "don't_starve")]
     static var rowSelect = 0
-    let year = ["2014", "2015", "2016", "2017", "2018"]
-
+    let year = [2014, 2015, 2016, 2017, 2018]
+    
+    var teamList = VleagueParser(year: 2017).getTeamList()
+    
     
     //yearTitle!.text = "2018"
     
@@ -43,16 +45,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     //TableView Functions
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return(ViewController.teamNameList.count)
+        return teamList.count
     }
     
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ViewControllerTableViewCell
         cell.rank.text = String(indexPath.row + 1)
-        cell.logo.image = ViewController.logoList[indexPath.row]
-        cell.teamName.text = ViewController.teamNameList[indexPath.row]
-        cell.score.text = TeamData.score[indexPath.row]
+        //cell.logo.image = teamList[indexPath.row].*supposedlytheimage
+        cell.teamName.text = teamList[indexPath.row].name
+        
+        cell.score.text = String(teamList[indexPath.row].points)
         
         return(cell)
     }
@@ -94,12 +97,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         bottomConstraint.constant = -200
         topConfirm.constant = 670
         botConfirm.constant = -200
-        print("i got exec'd")
+
         UIView.animate(withDuration: 0.1, animations: {
             self.view.layoutIfNeeded()
         })
-        self.navigationItem.rightBarButtonItem?.title = year[pickerView.selectedRow(inComponent: 0)]
-            //year[pickerView.selectedRow(inComponent: 1)]
+        self.navigationItem.rightBarButtonItem?.title = String(year[pickerView.selectedRow(inComponent: 0)])
+        teamList = VleagueParser(year: year[pickerView.selectedRow(inComponent: 0)]).getTeamList()
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+        
+        
+        //year[pickerView.selectedRow(inComponent: 1)]
     }
     
     
@@ -109,7 +118,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return(year[row])
+        return(String(year[row]))
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
@@ -129,7 +138,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         //self.navigationItem.titleView = UIImageView(image: #imageLiteral(resourceName: "Logo_VPF"))
         self.navigationItem.title = "Rankings"
-        self.navigationItem.rightBarButtonItem?.title = "2018"
+        self.navigationItem.rightBarButtonItem?.title = "2017"
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
     }
 

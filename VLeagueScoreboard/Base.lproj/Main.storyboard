@@ -6,7 +6,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Members-->
+        <!--Tab2 View Controller-->
         <scene sceneID="Kqf-Tj-QHQ">
             <objects>
                 <viewController id="eHc-c0-jko" customClass="Tab2ViewController" customModule="VLeagueScoreboard" customModuleProvider="target" sceneMemberID="viewController">
@@ -68,7 +68,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Members" id="oRC-ID-2me"/>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="oRC-ID-2me"/>
                     <connections>
                         <outlet property="tableView" destination="Vg2-1G-YMT" id="GZV-Ts-L2P"/>
                     </connections>
@@ -192,7 +192,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="contacts" id="HjU-0f-axH"/>
+                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="HjU-0f-axH"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
