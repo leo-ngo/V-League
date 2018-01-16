@@ -36,6 +36,14 @@ class Tab1ViewController: UIViewController {
     
     
     
+    var wins = String()
+    var losses = String()
+    var draws = String()
+    var matches = String()
+    var goals = String()
+    
+    
+    
     
     var teamList = VleagueParser(year: 2017).getTeamList()
     //@IBOutlet weak var popupCons: NSLayoutConstraint!
@@ -45,11 +53,11 @@ class Tab1ViewController: UIViewController {
         super.viewDidLoad()
         //logo.image = ViewController.logoList[ViewController.rowSelect]
         
-        value_1.text = String(teamList[ViewController.rowSelect].wins)
-        value_2.text = String(teamList[ViewController.rowSelect].losses)
-        value_3.text = String(teamList[ViewController.rowSelect].draws)
-        value_4.text = String(teamList[ViewController.rowSelect].matches)
-        value_5.text = String(teamList[ViewController.rowSelect].goalsFor + teamList[ViewController.rowSelect].goalsForAway)
+        value_1.text = wins
+        value_2.text = losses
+        value_3.text = draws
+        value_4.text = matches
+        value_5.text = goals
         
         
         label_1.text = "Wins"
@@ -69,11 +77,11 @@ class Tab1ViewController: UIViewController {
     @IBAction func segmenter(_ sender: AnyObject) {
         if segmenterChose.selectedSegmentIndex == 0 {
             
-            value_1.text = String(teamList[ViewController.rowSelect].wins)
-            value_2.text = String(teamList[ViewController.rowSelect].losses)
-            value_3.text = String(teamList[ViewController.rowSelect].draws)
-            value_4.text = String(teamList[ViewController.rowSelect].matches)
-            value_5.text = String(teamList[ViewController.rowSelect].goalsFor + teamList[ViewController.rowSelect].goalsForAway)
+            value_1.text = wins
+            value_2.text = losses
+            value_3.text = draws
+            value_4.text = matches
+            value_5.text = goals
             
             label_1.text = "Wins"
             label_2.text = "Losses"

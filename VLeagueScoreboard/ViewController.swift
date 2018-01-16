@@ -61,21 +61,27 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return(cell)
     }
     
-   // override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        //let barViewControllers = segue.destination as! UITabBarController
+        let nextVC = segue.destination as! Tab1ViewController
+        ViewController.rowSelect = (tableView.indexPathsForSelectedRows?[0].row)!
+        nextVC.wins = String(teamList[ViewController.rowSelect].wins)
+        nextVC.losses = String(teamList[ViewController.rowSelect].losses)
+        nextVC.draws = String(teamList[ViewController.rowSelect].draws)
+        nextVC.matches = String(teamList[ViewController.rowSelect].matches)
+        nextVC.goals = String(teamList[ViewController.rowSelect].goalsFor + teamList[ViewController.rowSelect].goalsForAway)
         //let nav = barViewControllers.viewControllers![0] as! UINavigationController
         //let destinationViewController = nav.viewControllers[0] as! Tab1ViewController
         //destinationViewController.rowIndex = (tableView.indexPathsForSelectedRows?[0].row)!
         
         
-    //}
+    }
     
     
     //Segue to Detailed Info
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        ViewController.rowSelect = (tableView.indexPathsForSelectedRows?[0].row)!
+        //ViewController.rowSelect = (tableView.indexPathsForSelectedRows?[0].row)!
         //rowIndex.index = (tableView.indexPathsForSelectedRows?[0].row)!
         performSegue(withIdentifier: "showInfo", sender: self)
     }
@@ -88,7 +94,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         bottomConstraint.constant = 0
         topConfirm.constant = 470
         botConfirm.constant = 0
-        print("i got exec'd")
         UIView.animate(withDuration: 0.3, animations: {
         self.view.layoutIfNeeded()
         })
@@ -132,7 +137,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        //code required
+        
     }
     
     
