@@ -2,9 +2,17 @@
 //  ViewController.swift
 //  VLeagueScoreboard
 //
-//  Created by Arofando, Hadi  on 1/4/18.
-//  Copyright © 2018 VLA. All rights reserved.
-//
+//  RMIT University Vietnam
+//  Course: COSC2659 iOS Development
+//  Semester: 2017C
+//  Assignment: 3
+//  Team: ALV
+//  Authors: Vuong Hung Ngo, Long Hoang Tran, Arofando Hadi
+//  ID: s3610887, s3635165, s3618954
+//  Created date: 17/01/2018
+//  Acknowledgement: http://www.vnleague.com/
+
+
 
 import UIKit
 
@@ -24,23 +32,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var botConfirm: NSLayoutConstraint!
     
     
-    //@IBOutlet weak var yearButton: UIBarButtonItem!
-    
-
-    
-    //yearButton.setTitle("2018", forState: UIControlState.Normal)
-    
-    
-    //static let teamNameList = ["Grim Dawn", "Terraria", "Necrodancer", "Don't Starve"]
-    //static let logoList: [UIImage] = [#imageLiteral(resourceName: "GD"),#imageLiteral(resourceName: "terraria"),#imageLiteral(resourceName: "necrodancer"),#imageLiteral(resourceName: "don't_starve")]
     
     static var rowSelect = 0
-    let year = [2017, 2016, 2015, 2014]
+    let year = [2017, 2016, 2015, 2014, 2013, 2012]
     
     var teamList = VleagueParser(year: 2017).getTeamList()
-    
-    
-    //yearTitle!.text = "2018"
     
     
     //TableView Functions
@@ -53,36 +49,74 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ViewControllerTableViewCell
         cell.rank.text = String(indexPath.row + 1)
-        //cell.logo.image = teamList[indexPath.row].*supposedlytheimage
         cell.teamName.text = teamList[indexPath.row].name
-        
         cell.score.text = String(teamList[indexPath.row].points)
-        
+        switch teamList[indexPath.row].name {
+        case "Quảng Nam":
+            cell.logo.image = UIImage(named: "Quảng Nam")
+        case "Sài Gòn":
+            cell.logo.image = UIImage(named: "Sài Gòn")
+        case "Becamex Bình Dương":
+            cell.logo.image = UIImage(named: "Becamex Bình Dương")
+        case "FLC Thanh Hóa":
+            cell.logo.image = UIImage(named: "FLC Thanh Hóa")
+        case "Hà Nội":
+            cell.logo.image = UIImage(named: "Hà Nội")
+        case "Hải Phòng":
+            cell.logo.image = UIImage(named: "Hải Phòng")
+        case "Hoàng Anh Gia Lai":
+            cell.logo.image = UIImage(named: "Hoàng Anh Gia Lai")
+        case "Long An":
+            cell.logo.image = UIImage(named: "Long An")
+        case "Sanna Khánh Hòa BVN":
+            cell.logo.image = UIImage(named: "Sanna Khánh Hòa BVN")
+        case "SHB Đà Nẵng":
+            cell.logo.image = UIImage(named: "SHB Đà Nẵng")
+        case "Sông Lam Nghệ An":
+            cell.logo.image = UIImage(named: "Sông Lam Nghệ An")
+        case "Than Quảng Ninh":
+            cell.logo.image = UIImage(named: "Than Quảng Ninh")
+        case "TP Hồ Chí Minh":
+            cell.logo.image = UIImage(named: "TP Hồ Chí Minh")
+        case "XSKT Cần Thơ":
+            cell.logo.image = UIImage(named: "XSKT Cần Thơ")
+        case "Khatoco Khánh Hòa":
+            cell.logo.image = UIImage(named: "Khatoco Khánh Hòa")
+        case "Kienlongbank Kiên Giang":
+            cell.logo.image = UIImage(named: "Kienlongbank Kiên Giang")
+        case "XM Xuân Thành Sài Gòn":
+            cell.logo.image = UIImage(named: "XM Xuân Thành Sài Gòn")
+        default:
+            break
+        }
+
         return(cell)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        let nextVC = segue.destination as! Tab1ViewController
-        ViewController.rowSelect = (tableView.indexPathsForSelectedRows?[0].row)!
-        nextVC.wins = String(teamList[ViewController.rowSelect].wins)
-        nextVC.losses = String(teamList[ViewController.rowSelect].losses)
-        nextVC.draws = String(teamList[ViewController.rowSelect].draws)
-        nextVC.matches = String(teamList[ViewController.rowSelect].matches)
-        nextVC.goals = String(teamList[ViewController.rowSelect].goalsFor + teamList[ViewController.rowSelect].goalsForAway)
-        //let nav = barViewControllers.viewControllers![0] as! UINavigationController
-        //let destinationViewController = nav.viewControllers[0] as! Tab1ViewController
-        //destinationViewController.rowIndex = (tableView.indexPathsForSelectedRows?[0].row)!
-        
-        
     }
     
     
     //Segue to Detailed Info
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let nextVC = segue.destination as! Tab1ViewController
+        ViewController.rowSelect = (tableView.indexPathsForSelectedRows?[0].row)!
+        nextVC.name = teamList[ViewController.rowSelect].name
+        nextVC.myRank = String(teamList[ViewController.rowSelect].rank)
+        nextVC.myScore = String(teamList[ViewController.rowSelect].points)
+        nextVC.wins = String(teamList[ViewController.rowSelect].wins)
+        nextVC.losses = String(teamList[ViewController.rowSelect].losses)
+        nextVC.draws = String(teamList[ViewController.rowSelect].draws)
+        nextVC.matches = String(teamList[ViewController.rowSelect].matches)
+        nextVC.goals = String(teamList[ViewController.rowSelect].goalsFor)
+        nextVC.goalsAgainst = String(teamList[ViewController.rowSelect].goalsAgainst)
+        nextVC.goalDifference = String(teamList[ViewController.rowSelect].goalDifference)
+        nextVC.yellowCards = String(teamList[ViewController.rowSelect].yellowCards)
+        nextVC.redCards = String(teamList[ViewController.rowSelect].redCards)
+        
+        
+    }
+    
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //ViewController.rowSelect = (tableView.indexPathsForSelectedRows?[0].row)!
-        //rowIndex.index = (tableView.indexPathsForSelectedRows?[0].row)!
         performSegue(withIdentifier: "showInfo", sender: self)
     }
     
@@ -97,6 +131,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         UIView.animate(withDuration: 0.3, animations: {
         self.view.layoutIfNeeded()
         })
+        
         
     }
     
@@ -147,9 +182,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //self.navigationItem.titleView = UIImageView(image: #imageLiteral(resourceName: "Logo_VPF"))
         self.navigationItem.title = "Rankings"
-        self.navigationItem.rightBarButtonItem?.title = "2017"
+        self.navigationItem.rightBarButtonItem?.title = "Years"
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
         
         

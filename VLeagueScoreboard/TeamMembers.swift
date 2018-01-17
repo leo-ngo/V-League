@@ -1,5 +1,5 @@
 //
-//  TabBarViewController.swift
+//  Tab2ViewController.swift
 //  VLeagueScoreboard
 //
 //  RMIT University Vietnam
@@ -15,14 +15,34 @@
 
 import UIKit
 
-class TabBarViewController: UITabBarController {
+class Tab2ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    var name = String()
+    var playerList = [Player]()
+    
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print(playerList.count)
+        return playerList.count
+    }
+    
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "playerCell", for: indexPath) as! Tab2TableViewCell
+        
+        cell.playerNum.text = playerList[indexPath.row].number
+        cell.playerName.text = playerList[indexPath.row].name
+        cell.playerPos.text = playerList[indexPath.row].position
+        
+        return(cell)
+    }
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         // Do any additional setup after loading the view.
     }

@@ -1,5 +1,5 @@
 //
-//  ViewControllerTableViewCell.swift
+//  Tab2TableViewCell.swift
 //  VLeagueScoreboard
 //
 //  RMIT University Vietnam
@@ -15,15 +15,17 @@
 
 import UIKit
 
-class ViewControllerTableViewCell: UITableViewCell {
-    
-    
-    @IBOutlet weak var rank: UILabel!
-    @IBOutlet weak var logo: UIImageView!
-    @IBOutlet weak var teamName: UILabel!
-    
-    @IBOutlet weak var score: UILabel!
+class Tab2TableViewCell: UITableViewCell {
 
+    
+    @IBOutlet weak var playerNum: UILabel!
+    @IBOutlet weak var playerName: UILabel!
+    @IBOutlet weak var playerPos: UILabel!
+    
+    
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

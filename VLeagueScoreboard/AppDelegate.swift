@@ -2,9 +2,17 @@
 //  AppDelegate.swift
 //  VLeagueScoreboard
 //
-//  Created by Arofando, Hadi  on 1/4/18.
-//  Copyright © 2018 VLA. All rights reserved.
-//
+//  RMIT University Vietnam
+//  Course: COSC2659 iOS Development
+//  Semester: 2017C
+//  Assignment: 3
+//  Team: ALV
+//  Authors: Vuong Hung Ngo, Long Hoang Tran, Arofando Hadi
+//  ID: s3610887, s3635165, s3618954
+//  Created date: 17/01/2018
+//  Acknowledgement: http://www.vnleague.com/
+
+
 
 import UIKit
 import CoreData
@@ -16,11 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
-        
-        
-        
-        
+         
         
         return true
     }
