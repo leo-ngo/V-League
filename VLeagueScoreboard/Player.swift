@@ -14,6 +14,7 @@
 
 
 import Foundation
+// player data
 struct Player {
     var name = ""
     var number = ""

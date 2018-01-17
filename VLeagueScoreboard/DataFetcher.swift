@@ -15,6 +15,10 @@
 import Foundation
 import WebKit
 
+/**
+ * Intantiate with a year as argument and call getTeamList() method to get that year's ranking
+ */
+
 class VleagueParser {
     var year: Int
     var url: String

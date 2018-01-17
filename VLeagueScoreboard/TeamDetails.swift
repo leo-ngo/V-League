@@ -22,7 +22,7 @@ import UIKit
 class Tab1ViewController: UIViewController {
 
     
-    //@IBOutlet weak var teamName: UILabel!
+    
     @IBOutlet weak var logo: UIImageView!
     @IBOutlet weak var segmenterChose: UISegmentedControl!
     
@@ -51,6 +51,7 @@ class Tab1ViewController: UIViewController {
     var matches = String()
     var goals = String()
     
+    var awayGoals = String()
     var goalsAgainst = String()
     var goalDifference = String()
     var yellowCards = String()
@@ -62,18 +63,11 @@ class Tab1ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         let nextVC = segue.destination as! Tab2ViewController
-        //ViewController.rowSelect = (tableView.indexPathsForSelectedRows?[0].row)!
         nextVC.name = name
         nextVC.playerList = playerList
         
         
     }
-    
-    //public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //ViewController.rowSelect = (tableView.indexPathsForSelectedRows?[0].row)!
-        //rowIndex.index = (tableView.indexPathsForSelectedRows?[0].row)!
-    //    performSegue(withIdentifier: "showPlayer", sender: self)
-    //}
     
     
     @IBAction func showPlayer(_ sender: AnyObject) {
@@ -81,18 +75,11 @@ class Tab1ViewController: UIViewController {
     }
     
     
-    
-    
+    //MARK: Transitioning in from other view
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //logo.image = ViewController.logoList[ViewController.rowSelect]
-        
-        //let button1 = UIBarButtonItem(title: "bitch", style: normal, target: self, action: nil)
         self.navigationItem.title  = name
-        print(name == "Quảng Nam")
-        print(name)
-        print("asdasdasdasfasfsdfsdgdfsgdfgdfgdfgdfgdfg")
         switch name {
         case "Quảng Nam":
             logo.image = UIImage(named: "Quảng Nam")
@@ -130,6 +117,8 @@ class Tab1ViewController: UIViewController {
             logo.image = UIImage(named: "XM Xuân Thành Sài Gòn")
         case "Đồng Nai":
             logo.image = UIImage(named: "Đồng Nai")
+        case "Hùng Vương An Giang":
+            logo.image = UIImage(named: "Hùng Vương An Giang")
         default:
             break
         }
@@ -162,6 +151,8 @@ class Tab1ViewController: UIViewController {
         
     }
     
+    //MARK: Segmented Control trigger
+    
     @IBAction func segmenterTap(_ sender: AnyObject) {
         if segmenterChose.selectedSegmentIndex == 0 {
             
@@ -180,7 +171,7 @@ class Tab1ViewController: UIViewController {
         
         if segmenterChose.selectedSegmentIndex == 1 {
             
-            value_1.text = wins
+            value_1.text = awayGoals
             value_2.text = goalsAgainst
             value_3.text = goalDifference
             value_4.text = yellowCards

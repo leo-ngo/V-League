@@ -35,11 +35,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     static var rowSelect = 0
     let year = [2017, 2016, 2015, 2014, 2013, 2012]
+    //let screenRect = UIScreen.main.bounds
+    let CurrentHeight = UIScreen.main.bounds.height
     
     var teamList = VleagueParser(year: 2017).getTeamList()
     
     
-    //TableView Functions
+    //MARK: TableView Functions and Settings
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return teamList.count
@@ -86,6 +88,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             cell.logo.image = UIImage(named: "Kienlongbank Kiên Giang")
         case "XM Xuân Thành Sài Gòn":
             cell.logo.image = UIImage(named: "XM Xuân Thành Sài Gòn")
+        case "Hùng Vương An Giang":
+            cell.logo.image = UIImage(named: "Hùng Vương An Giang")
         default:
             break
         }
@@ -94,7 +98,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     
-    //Segue to Detailed Info
+    //MARK: Transition to Detailed Info
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
@@ -108,6 +112,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         nextVC.draws = String(teamList[ViewController.rowSelect].draws)
         nextVC.matches = String(teamList[ViewController.rowSelect].matches)
         nextVC.goals = String(teamList[ViewController.rowSelect].goalsFor)
+        nextVC.awayGoals = String(teamList[ViewController.rowSelect].goalsForAway)
         nextVC.goalsAgainst = String(teamList[ViewController.rowSelect].goalsAgainst)
         nextVC.goalDifference = String(teamList[ViewController.rowSelect].goalDifference)
         nextVC.yellowCards = String(teamList[ViewController.rowSelect].yellowCards)
@@ -121,12 +126,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     
-    //Button to open year
+    //MARK: Trigger pickerView opening
     
     @IBAction func showPopup(_ sender: AnyObject) {
-        topConstraint.constant = 345
+        topConstraint.constant = CurrentHeight / 2
         bottomConstraint.constant = 0
-        topConfirm.constant = 470
+        topConfirm.constant = CurrentHeight * 4 / 5
         botConfirm.constant = 0
         UIView.animate(withDuration: 0.3, animations: {
         self.view.layoutIfNeeded()
@@ -135,14 +140,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
     
-    //PickerView Functions
+    //MARK: PickerView Functions and Settings
     
     
     @IBAction func closePopup(_ sender: AnyObject) {
-        topConstraint.constant = 545
-        bottomConstraint.constant = -200
-        topConfirm.constant = 670
-        botConfirm.constant = -200
+        topConstraint.constant = CurrentHeight
+        bottomConstraint.constant = 0 - CurrentHeight
+        topConfirm.constant = CurrentHeight
+        botConfirm.constant = 0 - CurrentHeight
 
         UIView.animate(withDuration: 0.1, animations: {
             self.view.layoutIfNeeded()
@@ -152,9 +157,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
-        
-        
-        //year[pickerView.selectedRow(inComponent: 1)]
     }
     
     
@@ -177,7 +179,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     
     
-    //Loading functions
+    //MARK: Initial loading functions
     
     
     override func viewDidLoad() {
@@ -185,6 +187,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.navigationItem.title = "Rankings"
         self.navigationItem.rightBarButtonItem?.title = "Years"
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
+        
         
         
         

@@ -12,7 +12,9 @@
 //  Created date: 17/01/2018
 //  Acknowledgement: http://www.vnleague.com/
 
-
+/**
+ * Intantiate with a team name and call get() method to get that team's member list
+ */
 
 import Foundation
 class PlayerList {

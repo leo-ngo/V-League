@@ -13,6 +13,7 @@
 //  Acknowledgement: http://www.vnleague.com/
 
 import Foundation
+// team data
 struct Team {
     var name = ""
     var rank = 1

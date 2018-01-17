@@ -17,6 +17,7 @@ import UIKit
 
 class Tab2TableViewCell: UITableViewCell {
 
+    //MARK: Team member cell elements
     
     @IBOutlet weak var playerNum: UILabel!
     @IBOutlet weak var playerName: UILabel!

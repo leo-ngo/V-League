@@ -18,6 +18,8 @@ import UIKit
 class ViewControllerTableViewCell: UITableViewCell {
     
     
+    //MARK: Cell elements
+    
     @IBOutlet weak var rank: UILabel!
     @IBOutlet weak var logo: UIImageView!
     @IBOutlet weak var teamName: UILabel!

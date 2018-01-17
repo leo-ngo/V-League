@@ -23,6 +23,8 @@ class Tab2ViewController: UIViewController, UITableViewDataSource, UITableViewDe
     var name = String()
     var playerList = [Player]()
     
+    //MARK: Tableview functions and settings
+    
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         print(playerList.count)
         return playerList.count
